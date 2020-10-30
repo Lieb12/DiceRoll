@@ -13,12 +13,16 @@ class ViewController: UIViewController {
     var resultList: [Int] = []
     var timesTapped: Int = 0
     
+    var wins = 0
+    var losses = 0
+    
     @IBOutlet weak var leftDie: UIImageView!
     @IBOutlet weak var rightDie: UIImageView!
     @IBOutlet var screenTapRec: UITapGestureRecognizer!
     var firstDie = Die(rolled: 0, number: 0)
     var secondDie = Die(rolled: 0, number: 1)
     
+    @IBOutlet weak var winLossTracker: UILabel!
     @IBOutlet weak var tapToRollTxt: UILabel!
     @IBOutlet weak var firstDieTxt: UILabel!
     @IBOutlet weak var secondDieTxt: UILabel!
@@ -27,11 +31,35 @@ class ViewController: UIViewController {
     @IBOutlet weak var twoAgo: UILabel!
     @IBOutlet weak var oneAgo: UILabel!
     
-    let red1 = UIImage(named: "/diceImgs/diceRed1.png")
+    func winAlert() {
+        let alert = UIAlertController(title: "You win!", message: "You rolled a winning number", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK!", style: .default, handler: nil))
+
+        self.present(alert, animated: true)
+        
+        wins += 1
+    }
+    
+    func lossAlert() {
+        let alert = UIAlertController(title: "You lost.", message: "You rolled a losing number", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+        self.present(alert, animated: true)
+        
+        losses += 1
+    }
+    
+    func updateArray() {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        winLossTracker.text = "\(wins)-\(losses)"
         tapToRollTxt.alpha = 1.0
+        
     }
 
     
@@ -112,7 +140,39 @@ class ViewController: UIViewController {
             do {leftDie.image = UIImage(named: "diceRed1.png")}
         }
         
+        // win/lose alerts
+        switch totalRoll {
+        case 7: do {
+            winAlert()
+            break
+        }
+        case 11: do {
+            winAlert()
+            break
+        }
+        case 2: do {
+            lossAlert()
+            break
+        }
+        case 3: do {
+            lossAlert()
+            break
+        }
+        case 12: do {
+            lossAlert()
+            break
+        }
+        default:
+            break
+        }
+        
         //array and displaying past 3 rolls
+        if timesTapped =
+        
+        // track wins and losses
+        winLossTracker.text = "\(wins)-\(losses)"
+        
+        
         
     }
     
