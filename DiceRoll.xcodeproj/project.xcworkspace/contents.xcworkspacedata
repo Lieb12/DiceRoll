@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/olieberman78/Desktop/Mobile Apps Projects/DiceRoll/DiceRoll/Car.swift">
+   </FileRef>
+   <FileRef
       location = "self:DiceRoll.xcodeproj">
    </FileRef>
 </Workspace>

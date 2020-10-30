@@ -13,6 +13,13 @@
 		2E6AF3A5254C331000FEBE9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6AF3A3254C331000FEBE9D /* Main.storyboard */; };
 		2E6AF3A7254C331300FEBE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6AF3A6254C331300FEBE9D /* Assets.xcassets */; };
 		2E6AF3AA254C331300FEBE9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6AF3A8254C331300FEBE9D /* LaunchScreen.storyboard */; };
+		2E6AF3B2254C5B5300FEBE9D /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6AF3B1254C5B5300FEBE9D /* Die.swift */; };
+		2E6AF3C8254CA68200FEBE9D /* diceRed5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6AF3C2254CA68000FEBE9D /* diceRed5.png */; };
+		2E6AF3C9254CA68200FEBE9D /* diceRed6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6AF3C3254CA68100FEBE9D /* diceRed6.png */; };
+		2E6AF3CA254CA68200FEBE9D /* diceRed3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6AF3C4254CA68100FEBE9D /* diceRed3.png */; };
+		2E6AF3CB254CA68200FEBE9D /* diceRed2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6AF3C5254CA68100FEBE9D /* diceRed2.png */; };
+		2E6AF3CC254CA68200FEBE9D /* diceRed1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6AF3C6254CA68200FEBE9D /* diceRed1.png */; };
+		2E6AF3CD254CA68200FEBE9D /* diceRed4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6AF3C7254CA68200FEBE9D /* diceRed4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		2E6AF3A6254C331300FEBE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E6AF3A9254C331300FEBE9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E6AF3AB254C331300FEBE9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E6AF3B1254C5B5300FEBE9D /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
+		2E6AF3C2254CA68000FEBE9D /* diceRed5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diceRed5.png; sourceTree = "<group>"; };
+		2E6AF3C3254CA68100FEBE9D /* diceRed6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diceRed6.png; sourceTree = "<group>"; };
+		2E6AF3C4254CA68100FEBE9D /* diceRed3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diceRed3.png; sourceTree = "<group>"; };
+		2E6AF3C5254CA68100FEBE9D /* diceRed2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diceRed2.png; sourceTree = "<group>"; };
+		2E6AF3C6254CA68200FEBE9D /* diceRed1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diceRed1.png; sourceTree = "<group>"; };
+		2E6AF3C7254CA68200FEBE9D /* diceRed4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diceRed4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 		2E6AF39C254C331000FEBE9D /* DiceRoll */ = {
 			isa = PBXGroup;
 			children = (
+				2E6AF3B1254C5B5300FEBE9D /* Die.swift */,
 				2E6AF39D254C331000FEBE9D /* AppDelegate.swift */,
 				2E6AF39F254C331000FEBE9D /* SceneDelegate.swift */,
 				2E6AF3A1254C331000FEBE9D /* ViewController.swift */,
@@ -63,8 +78,22 @@
 				2E6AF3A6254C331300FEBE9D /* Assets.xcassets */,
 				2E6AF3A8254C331300FEBE9D /* LaunchScreen.storyboard */,
 				2E6AF3AB254C331300FEBE9D /* Info.plist */,
+				2E6AF3C1254CA65300FEBE9D /* diceImgs */,
 			);
 			path = DiceRoll;
+			sourceTree = "<group>";
+		};
+		2E6AF3C1254CA65300FEBE9D /* diceImgs */ = {
+			isa = PBXGroup;
+			children = (
+				2E6AF3C6254CA68200FEBE9D /* diceRed1.png */,
+				2E6AF3C5254CA68100FEBE9D /* diceRed2.png */,
+				2E6AF3C4254CA68100FEBE9D /* diceRed3.png */,
+				2E6AF3C7254CA68200FEBE9D /* diceRed4.png */,
+				2E6AF3C2254CA68000FEBE9D /* diceRed5.png */,
+				2E6AF3C3254CA68100FEBE9D /* diceRed6.png */,
+			);
+			path = diceImgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +154,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E6AF3CC254CA68200FEBE9D /* diceRed1.png in Resources */,
+				2E6AF3CA254CA68200FEBE9D /* diceRed3.png in Resources */,
+				2E6AF3C9254CA68200FEBE9D /* diceRed6.png in Resources */,
+				2E6AF3CD254CA68200FEBE9D /* diceRed4.png in Resources */,
+				2E6AF3C8254CA68200FEBE9D /* diceRed5.png in Resources */,
+				2E6AF3CB254CA68200FEBE9D /* diceRed2.png in Resources */,
 				2E6AF3AA254C331300FEBE9D /* LaunchScreen.storyboard in Resources */,
 				2E6AF3A7254C331300FEBE9D /* Assets.xcassets in Resources */,
 				2E6AF3A5254C331000FEBE9D /* Main.storyboard in Resources */,
@@ -140,6 +175,7 @@
 			files = (
 				2E6AF3A2254C331000FEBE9D /* ViewController.swift in Sources */,
 				2E6AF39E254C331000FEBE9D /* AppDelegate.swift in Sources */,
+				2E6AF3B2254C5B5300FEBE9D /* Die.swift in Sources */,
 				2E6AF3A0254C331000FEBE9D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
