@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var resultList: [Int] = []
+    var resultList: [Int] = [0, 0, 0]
     var timesTapped: Int = 0
     
     var wins = 0
@@ -59,7 +59,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         winLossTracker.text = "\(wins)-\(losses)"
         tapToRollTxt.alpha = 1.0
-        
     }
 
     
@@ -167,10 +166,19 @@ class ViewController: UIViewController {
         }
         
         //array and displaying past 3 rolls
-        if timesTapped =
+            //1
+        resultList.removeFirst()
+        resultList.append(totalRoll)
+        
+            //3
+        threeAgo.text = String(resultList[0])
+        twoAgo.text = String(resultList[1])
+        oneAgo.text = String(resultList[2]
         
         // track wins and losses
-        winLossTracker.text = "\(wins)-\(losses)"
+        let winString = String(wins)
+        let lossString = String(losses)
+        winLossTracker.text = "\(winString)-\(lossString)"
         
         
         
